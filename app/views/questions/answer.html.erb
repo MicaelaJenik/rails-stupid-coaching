@@ -1,10 +1,16 @@
-<h1>And to your...</h1>
-<p>Question:</p>
-<p>
-  <%= params[:ask] %>
-</p>
-<h2>The coach answers:</h2>
-<p>
-  <%= @answer %>
-</p>
+<h1>Stupid Coaching</h1>
+<div class="card">
+  <h2>And to your question...</h2>
+  <p> </p>
+  <p><%= params[:ask] %></p>
+  <p>-You</p>
+</div>
+<p> </p>
+<div class="card">
+  <h2>The coach answers:</h2>
+  <p> </p>
+  <p><%= @answer %></p>
+  <p>-Your coach</p>
+</div>
+<p> </p>
 <%= link_to "Ask another question", ask_path %>
